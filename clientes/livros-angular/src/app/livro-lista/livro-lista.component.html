@@ -1,0 +1,29 @@
+<main class="container">
+  <div class="cabecalho">
+    <h1>Catálogo de Livros — Angular</h1>
+    <a class="botao" routerLink="/dados">Novo livro</a>
+  </div>
+
+  <p *ngIf="livros.length === 0">Nenhum livro cadastrado.</p>
+
+  <table *ngIf="livros.length > 0">
+    <thead>
+      <tr>
+        <th>Título</th>
+        <th>Editora</th>
+        <th>Autores</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let livro of livros; let i = index">
+        <td>{{ livro.titulo }}</td>
+        <td>{{ controleEditora.getNomeEditora(livro.codEditora) }}</td>
+        <td>{{ livro.autores.join(', ') }}</td>
+        <td>
+          <button (click)="excluir(livro.codigo)">Excluir</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</main>

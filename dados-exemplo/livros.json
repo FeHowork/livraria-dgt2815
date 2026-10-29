@@ -1,0 +1,26 @@
+[
+  {
+    "titulo": "Dom Casmurro",
+    "codEditora": 1,
+    "resumo": "Romance de Machado de Assis.",
+    "autores": [
+      "Machado de Assis"
+    ]
+  },
+  {
+    "titulo": "Engenharia de Software",
+    "codEditora": 2,
+    "resumo": "Introdução à engenharia de software.",
+    "autores": [
+      "Ian Sommerville"
+    ]
+  },
+  {
+    "titulo": "JavaScript: O Guia Definitivo",
+    "codEditora": 3,
+    "resumo": "Referência para desenvolvimento com JavaScript.",
+    "autores": [
+      "David Flanagan"
+    ]
+  }
+]
